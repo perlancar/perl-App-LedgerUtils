@@ -1,5 +1,10 @@
 Revision history for App-LedgerUtils
 
+0.01    2015-03-26 (PERLANCAR)
+
+        - Add script: parse-ledger.
+
+
 0.00    2015-03-21 (PERLANCAR)
 
         - First release. Currently empty.

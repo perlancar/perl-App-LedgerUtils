@@ -19,6 +19,9 @@ $SPEC{parse_ledger} = {
 
 Mostly only useful for developer for debugging purposes.
 
+If the result is undef (null in JSON), you can use the `--no-naked` option to
+see the error message.
+
 _
     args => {
         %App::LedgerUtils::common_args,
@@ -49,4 +52,3 @@ $cli->run;
 
 # ABSTRACT:
 # PODNAME:
-

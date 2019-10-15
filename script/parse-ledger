@@ -8,7 +8,7 @@ use strict;
 use warnings;
 
 use App::LedgerUtils;
-use Data::Clean::JSON;
+use Data::Clean::ForJSON;
 use Perinci::CmdLine::Any;
 
 our %SPEC;
@@ -41,7 +41,7 @@ sub parse_ledger {
 my $cli = Perinci::CmdLine::Any->new(
     url => '/main/parse_ledger',
     pass_cmdline_object => 1,
-    cleanser => Data::Clean::JSON->new(-circular=>[clone => 0]),
+    cleanser => Data::Clean::ForJSON->new(-circular=>[clone => 0]),
 );
 
 # so help message can be more helpful
